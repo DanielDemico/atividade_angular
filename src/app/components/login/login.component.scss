@@ -1,0 +1,90 @@
+@import "../../app.component.scss";
+body {
+    height: 100%;
+
+    .login {
+        height: 100vh;
+
+   
+        .direita{
+            
+            .bolsa-verde{
+                width: 120px;
+            }
+            .titulo{
+                font-size: 26px;
+                text-align: center;
+                font-weight: 600;
+            
+            }
+            label{
+                color: $cinza-primary;
+                font-size: 16px;
+            }
+            input{
+                padding-left: 10px;
+                height: 40px;
+                border-radius: 8px;
+                border: 1px solid $cinza-secondary;
+            }
+            input::placeholder{
+                color: $cinza-secondary;
+                padding: 0px 5px;
+            }
+         
+            .senha{
+                position: relative;
+
+                 
+                input{
+                    width: 100%;
+                }
+                .cadeado{
+                    position: absolute;
+                    height:24px ;
+                    right:10px;
+                    top:8px;
+                }
+            }
+            .btn-entrar{
+                border: none;
+                background-color: $verde-primary;
+                font-weight: 600;
+                color: white;
+               
+            }
+
+            .link{
+              
+                    color: $cinza-primary;
+                
+                a{
+                    color: $verde-primary;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .esquerda{
+        display: none;
+    }
+
+    .direita{
+        gap: 50px;
+        .bolsa-verde{
+            width: 100px !important;
+        
+        }
+        form{
+            div{
+                margin: 10px 0px;
+            }
+        }
+    }
+
+    
+}

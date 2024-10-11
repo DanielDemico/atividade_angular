@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <section class="cadastro d-flex justify-content-center align-items-center">
+        <div class="container row gap-4">
+
+            <!-- Esquerda -->
+            <div class="esquerda col-lg-7 ">
+                <img class="w-100" src="assets/images/img-cadastro.svg">
+            </div>
+            
+
+            <!-- Direita -->
+            <div class="d-flex flex-column justify-content-center align-items-center col-lg-4 col-md-12 col-12">  
+              
+                <p class="title mb-5">Cadastre-se</p>
+         
+
+                <div>
+                    <form class="d-flex flex-column align-items-center gap-4">
+                        <div class="d-flex flex-column w-100">
+                            <label>Nome</label>
+                            <input type="text">
+                        </div>
+                        <div class="d-flex flex-column w-100">
+                            <label>E-mail</label>
+                            <input type="email">
+                        </div>
+                        <div class="w-100">
+                            <label>Senha</label>
+                            <div class="input-senha ">
+                                <input [type]="mostrar? 'text':'password'">
+                                <img (click)="mostrarSenha()" [src]="mostrar? 'assets/images/cadeado-aberto.png':'/assets/images/cadeado.svg'">
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <label>Confirmação da senha</label>
+                            <div class="input-senha">
+                                <input [type]="mostrarConfirmar? 'text':'password'">
+                                <img (click)="mostrarSenhaConfirmar()" [src]="mostrarConfirmar? 'assets/images/cadeado-aberto.png':'/assets/images/cadeado.svg'">
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <input class="w-100 btn-cadastrar" type="submit" value="Cadastrar">
+                        </div>
+                        <p class="link"> Possui Conta ? <a href="/login">Entrar</a></p>
+                    </form>
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

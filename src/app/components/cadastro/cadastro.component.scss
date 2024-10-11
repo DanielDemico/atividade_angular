@@ -1,0 +1,62 @@
+@import "../../app.component.scss";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    .cadastro{
+        height: 100vh;;
+    
+       .title{
+        font-size: 24px;
+        font-weight: 600;
+       
+       }
+       form{ 
+        width: 360px    ;
+        label{
+        color: $cinza-primary;
+       }
+       input{
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid $cinza-secondary;
+        padding-left: 10px;
+       }
+       input::placeholder{
+        outline: none;
+       }
+       .input-senha{
+        position: relative;
+        input{
+            width: 100%;
+        }
+        img{
+            position: absolute;
+            right: 10px;
+            top:8px
+        }
+       }
+       .btn-cadastrar{
+        color: white;
+        font-weight: 600;
+        background-color: $verde-primary;
+       }
+       .link{
+        color: $cinza-primary;
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            color:  $verde-primary;
+        }
+    }
+    }
+      
+    }
+}
+@media screen and (max-width:1000px) {
+    .esquerda{
+        display: none;
+    }
+}
